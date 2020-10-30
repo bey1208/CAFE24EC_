@@ -1,0 +1,59 @@
+<div class="quickSNS">
+  <div class="quickDiv">
+      <a target="_blank" class="xi-blogger back" href="//blog.naver.com/bey1218" title='백은영의 블로그'></a>
+      <div class="quickDiv1  ">
+      <a  class="xi-share-alt-o back" id="shareBtn" href="#none" title='백은영의 공유버튼'></a>
+        <ul id="quickLink">
+            <li>
+              <a target="_blank" class="xi-facebook-official back" href="//www.facebook.com/pg/%EB%94%94%EB%AC%B4-104860391344038/shop/?rid=104860391344038&rt=6&referral_code=page_shop_card">
+                <span>DIMOO</span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" class="xi-kakaotalk back" href="//open.kakao.com/o/sJQWXvAc">
+                <span>ME</span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" class="xi-instagram back" href="//www.instagram.com/pen_cake__/">
+                <span>ME</span>
+              </a>
+            </li>
+        </ul>
+
+    </div>
+    </div>
+  </div>
+
+
+
+<div id="quick">
+    <div module="Layout_orderBasketcount" class="displaynone">
+        <!--@css(/css/module/layout/orderBasketcount.css)-->
+        <strong>장바구니</strong> <span><a href="/order/basket.html">{$basket_count}</a>개</span>
+    </div>
+
+    <div module="Layout_productRecent">
+        <!--@css(/css/module/layout/productRecent.css)-->
+        <ul>
+            <li class="{$disp_recent|display}">
+                <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}</span></a>
+            </li>
+            <li class="{$disp_recent|display}">
+                <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}</span></a>
+            </li>
+        </ul>
+        <!-- 퀵메뉴 안보이겡 -->
+        <p class="player displaynone">
+              <a href="#none" class="prev">paev</a>
+              <a href="#none" class="next">next</a>
+        </p>
+    </div>
+
+    <h2><a href="/product/recent_view_product.html">+</a></h2>
+    <p class="pageTop">
+      <a href="#top" title="화면 최상단으로 이동하기">
+        TOP
+      </a>
+    </p>
+</div>
