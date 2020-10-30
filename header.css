@@ -1,0 +1,199 @@
+/* 상단 압솔로 바꾸기...  */
+#header .topArea .bordercolor{
+         position:absolute; right:0; top:50%;
+         transition:0.5s; display: block;
+          }
+#header .topArea .bordercolor a {color: white;
+         background-color: #0066e8; border-radius: 20px;
+         padding: 5px 10px; line-height: 35px;
+         font-size: 13px; font-family: 'TmoneyRoundWindRegular'
+         }
+
+#header .xans-layout-logotop {width: 200px;
+   position: absolute; left: 0; top: 40px;}
+
+/* 상단 정리, 좌우배치 */
+.leftCon{float:left}
+.rightCon{float:right}
+/* 좌우배치, 자식노드 옆으로 배열 */
+.leftCon > *,
+.rightCon > *{display: inline-block; vertical-align: middle; line-height: 35px;
+font-size: 15px; text-decoration: none;}
+
+/*.leftCon*/
+/* 로그인 메뉴 백그라운드 없애기  */
+#header .xans-layout-statelogoff > a,
+#header .xans-layout-statelogon > a{
+        padding: 0 4px 0 4px; color: black;
+        font-size: 15px; background: none;}
+
+/* 커뮤니티 height 빼줌/ 국가 압솔빼주고 나란히 정리/ 고객센터 정리 */
+#header .xans-layout-info h2{display: none;}
+#header .xans-layout-boardinfo h2{height:auto}
+#header .xans-layout-multishoplist.thumb{position:relative; top:0}
+
+/* 커뮤니티 navi */
+#header{position:fixed; top:0; left: 0; right: 0;
+        z-index:1000; background-color: white;
+        transition: 0.5s;
+        }
+#header .xans-layout-boardinfo{position:relative;}
+/* 커뮤니티 hover시 나오는 box */
+#header .borderBox{ font-size: 12px; position:absolute;
+                   background-color: white; border: 1px solid #eee;
+                   line-height: 35px; text-align: center;
+                   box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+                   width:90%; display: none; z-index: 1000;
+                 }
+#header .xans-layout-boardinfo:hover .borderBox{display: block}
+
+
+/* .rightCon */
+/* 로그인아웃 가운데맞춤, xi아이콘 */
+#header .xans-layout-statelogoff,
+#header .xans-layout-statelogon{
+ float: none;
+ height: auto;
+ line-height: 35px;
+ margin-right:10px;
+}
+#header .xans-layout-statelogoff a > i,
+#header .xans-layout-statelogon a > i{
+ margin-right:5px; display:block}
+#header .xans-layout-statelogoff a > i,
+#header .xans-layout-statelogon a > i::before{
+ width:20px;}
+.inlineDiv{display: inline; margin-left:10px;}
+
+
+/* 쿠폰 다운로드, 커뮤니티 xi아이콘  */
+.topArea a span{margin: 0px 0px 0 3px;
+   vertical-align: middle;}
+#header .xans-layout-boardinfo i{margin-right:5px;}
+
+/* xeicon 가운데 맞추기 */
+#header .xi-cart-o::before {content: "\e9fb"; vertical-align: middle;}
+/* xi아이콘 크기 바꾸기 */
+.rightCon .inlineDiv > i{font-size: 20px; vertical-align: middle; color:#0066e8}
+
+/* 검색 -> 아이템 별로 없으니까 주석처리 해놓음..*/
+/* 검색 아이콘 위치, 크기 */
+/* #searchBarForm {}
+#header .xans-layout-searchheader a img{width: 18px; margin-top:10px}
+#header .xans-layout-searchheader {float:none; margin: 0}
+.xans-layout-searchheader #beyDiv fieldset .inputimg {
+                            width:20px; height: 20px; display: inline}
+.xans-layout-searchheader #beyDiv fieldset{max-width: 600px;
+                            margin:0 auto; border-radius: 0;border:0;}
+#beyDiv {position: absolute; background-color: white; right: 0;
+         top:50%;z-index: 1000; display: none; border-radius:20px;
+         border:1px solid #0066e8}
+
+#bey_seafch{ display: block}
+
+#header .xans-layout-searchheader #keyword {
+   width: 250px; height: 20px; padding: 0px;
+   margin-left:20px;line-height: 32px; font-size: 15px;
+   color: #7c8389; background: #fff;} */
+
+/* 카트 옆 숫자 백그라운드  */
+.inlineDiv > a .EC-Layout-Basket-count{
+         color: #fff; font-size: 15px; background-color: #6ab8557a;
+         border-radius: 10px; padding: 0 5px;
+         }
+
+/* 스크롤시 로그인 회원가입 버튼이 글없이 아이콘만 나오게  */
+#header .rightCon_none{display: none;}
+#header .rightCon_none .inlineDiv > a{font-size: 27px;
+           vertical-align: middle; color: #0066e8;margin-left: 5px;}
+
+#header.scroll .rightCon_none{display: block; position:absolute; top:50%; right: 0;}
+
+/*핵심메뉴 navi */
+#navi{text-align:center}
+#navi > a {color:black}
+/*핵심메뉴 navi hover 검정똥똥이 */
+#navi li{position:relative; margin:0 15px; font-size:25px;}
+#navi > li{display: inline-block; vertical-align: middle;
+            line-height: 65px;}
+#navi > li:before{content:""; display:block; margin: 0 auto;
+                  height:5px; width:5px; border-radius: 50%;
+                  background-color: rgba(0,0,0,0);
+}
+  /* 숨은 카테고리*/
+#category{position:absolute;z-index:10000;
+          width: 400px; display:none;}
+
+/*숨은 카테고리*/
+#navi > li:hover #category{display: block;}
+/* 검정 똥똥똥 hover */
+#navi > li:hover:before{background-color: black; position:relative; top:10px;}
+
+/*숨은 카테고리 a 글자*/
+#category .position{position:relative;
+                    background-color: white;
+                    border: 1px solid #eee;
+                    text-align: left;
+                    box-shadow: 2px 3px 5px rgba(0,0,0,.3);
+                    padding:8px}
+#category .position > ul > li > a{font-weight:normal;
+                                  font-size: 15px; line-height:35px;
+                                  padding:0px; text-align: left}
+#category .navishopimg{position:absolute; right: 2.5%; top:3.5%;
+                        width:53%;}
+#category .navishopimg img{width: 100%}
+#header .xans-layout-boardinfo li{padding:0}
+/* #category::after { content: "";
+                   background-image: url("//bey1218.cafe24.com/web/product/medium/202009/fc8cf435a5a3ea4b60e738e076f07f5b.jpg");
+                   position: absolute; display: block; right: 10px; top: 10px;
+                   width: 200px; height: 200px; z-index: 1000;
+                   background-size: 100%;
+                   background-repeat: no-repeat;} */
+
+
+ /* 로고, 네비 정리하기  */
+#header .topArea{clear:both; height:auto;
+                 padding:0; text-align: left; width: 100%}
+#header .topArea > a{text-align: right; }
+#header:after{display: none;}
+
+#header .xans-layout-info strong,
+#header .xans-layout-info span{font-weight: normal}
+
+/* 마진 패딩 없애주기  */
+#header .xans-layout-info,
+#header .xans-layout-boardinfo{ margin: 0;
+                                padding: 0;
+                                border-bottom: 0;}
+
+/* 상단영역 스타일 입히기  */
+/* 커뮤니티 */
+#header .xans-layout-multishoplist.thumb > ul li a{margin-left: 5px;}
+#header .xans-layout-boardinfo{margin-left: 15px;}
+
+/* 왼쪽 상단 폰번호,커뮤니티 */
+#header .xans-layout-boardinfo,
+#header .xans-layout-info {border-left: 1px solid #ccc;
+                           padding-left: 15px;}
+#header .xans-layout-info span{color:#aaa;}
+#header .xans-layout-boardinfo h2{color:black;font-size: 15px;font-weight: normal}
+
+/* 로그인 로그아웃 */
+#header .xans-layout-statelogon{height: 0; line-height:35px; float:left}
+#header .xans-layout-statelogon > a { padding: 0 4px 0 10px;
+                                      color: #757575;
+                                      font-size: 15px;
+                                      background: none;}
+
+/* 스크롤  */
+
+/* 상단 올라가고, 배경달라짐 */
+#header.scroll{margin-top:-35px; background-color: rgba(255,255,255,.5);}
+/* 안보임~ */
+#header.scroll #navi > li::before{display: none;}
+#header.scroll .topArea .bordercolor a{display: none}
+#header .EC-Layout_Basket-count-display{display: none;}
+/* 핵심메뉴 작아짐 */
+#header.scroll #navi > li{font-size: 18px; line-height:40px}
+/* 로고 크기 작아짐 */
+#header.scroll .xans-layout-logotop{width: 130px; top:50%; left: 10px;}

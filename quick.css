@@ -1,0 +1,71 @@
+/* 퀵메뉴 상품이름 안 보이게  */
+.xans-layout.xans-layout-productrecent li span{display: none}
+/* 퀵메늉 */
+#quick { position:fixed; top:unset !important;
+   z-index:10000;  background-color:rgb(0, 102, 232);
+   border-radius: 20px;
+  bottom:20px; right:20px;
+  }
+
+
+ /* 최상단으로 이동 */
+  #quick h2{float:left; text-align: center; line-height: 50px; width:50px;}
+  #quick h2 a, #quick .pageTop a{color:white; font-family:'TmoneyRoundWindExtraBold'; font-size: 13px}
+  #quick .pageTop{width:50px; height: 50px;
+                  text-align: center; line-height: 50px;
+                  position: fixed;
+                  bottom: 80px; right: 20px;
+                  background: #0066e8;
+                  border-radius: 20px;
+                  }
+/* 최근 본 상품  */
+/* 퀵메뉴 자식들 */
+ /* 큰봉지 div */
+#quick .xans-layout-productrecent{float:left; border-radius: 20px;
+background-color:#ffffffcf; border:none;}
+
+#quick .xans-layout-productrecent > ul{display:table; float:left;
+  width: auto; margin: 3px;}
+#quick .xans-layout-productrecent > ul > li{display:table-cell; margin-left:3px}
+#quick .xans-layout-productrecent > ul > li a{margin-right: 3px}
+#quick .xans-layout-productrecent .player{float:left;}
+#quick .xans-layout-productrecent li img{max-width: 50px; border-radius: 20px}
+
+#quick .banner a{display:block; margin:15px 0 0;}
+
+
+
+/* 큰 봉투 */
+.quickSNS{position:fixed; right:20px; top:50%; transform: translateY(-50%); z-index:3000}
+.quickDiv{position:relative;}
+
+/* 블로그 / a태그 공통클래스 */
+.back{font-size: 30px; color:white;
+background-color:#0066e8; border-radius:50%; width:40px; height:40px;
+line-height: 40px; text-align: center;
+}
+
+/* 그 외 공유링크  */
+.quickDiv1{position:relative; margin-top:12px}
+.quickDiv1 ul{position: absolute; right: 60px; top: 0;
+    /* transform: translateX(calc(100% + 75px));
+    transition: 0.5s; */
+}
+/* .quickDiv1.slideRightView ul{ transform: translateX(0);} */
+#quickLink li{ position: relative; transition: 0.5s; left:250px;
+  display: table-cell; padding-left:12px;
+}
+
+.quickDiv1.slideRightView #quickLink li{ left: 0px}
+.quickDiv1.slideRightView #quickLink li:nth-child(3){ transition-delay: 0.2s}
+.quickDiv1.slideRightView #quickLink li:nth-child(2){ transition-delay: 0.4s}
+.quickDiv1.slideRightView #quickLink li:nth-child(1){transition-delay: 0.6s}
+
+#quickLink > li span{text-align: center; font-size: 15px; color:black;}
+
+.quickDiv .xi-share-alt-o::before {
+    font-size: 28px;
+    margin-left: -4px;
+    margin-top: 1px;
+    display: inline-block;
+}

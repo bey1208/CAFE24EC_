@@ -1,0 +1,287 @@
+/* 깃 저장해보기 위해...  */
+/* 디무 바로가기 배너 안 보이게*/
+#contents .visual{display:none;}
+/* 사이드 바 안 보이게 */
+#sidebar{display:none;}
+/* 자유게시판 상품큐앤에이 */
+#boardArea{display: none}
+/* 화면 맞추기 플루트 일단 빼줫음 */
+#contents {float: none; text-align: center}
+
+/* 폰트 */
+
+.fontRegular{font-family: 'TmoneyRoundWindRegular'}
+.fontExtraBold{font-family: 'TmoneyRoundWindExtraBold';}
+
+.font100{font-weight: 100;}
+.font300{font-weight: 300;}
+.font400{font-weight: 400;}
+.font500{font-weight: 500;}
+.font700{font-weight: 700}
+.font900{font-weight: 900}
+
+/* * 배너  */
+#bannerdiv {margin-top:105px;}
+#bannerdiv .smart-banner-wrapper{text-align:center}
+#bannerdiv .smart-banner-wrapper img{width: auto; display: inline-block;}
+#bannerdiv .smart-banner-wrapper li:nth-child(1){background-color:#00231d }
+#bannerdiv .smart-banner-wrapper li:nth-child(2){background-color:#fed430 }
+
+#bannerdiv2 .smart-banner-wrapper{text-align:center}
+#bannerdiv2 .smart-banner-wrapper img{width: auto; display: inline-block;}
+#bannerdiv2 .smart-banner-wrapper li:nth-child(3){background-color:#0066e7 }
+#bannerdiv2 .smart-banner-wrapper li:nth-child(2){background-color:#cfe400}
+#bannerdiv2 .smart-banner-wrapper li:nth-child(1){background-color:#ff40a8}
+#bannerdiv2 .xans-smart-banner-admin-PC00001.xans-smart-banner-admin{margin-top:5%;}
+/* #bannerdiv .smart-banner-bx-wrapper .bx-pager{text-align: center;}
+#bannerdiv .smart-banner-bx-wrapper .bx-pager.bx-default-pager a{
+            background: rgba(0,0,0,.2); text-indent: -9999px; display: block;
+            width: 8px; height: 8px; margin: 0 5px; outline: 0;} */
+#bannerdiv .bx-controls-direction{position:absolute; left: 68%; top:82%;}
+#bannerdiv .smart-banner-bx-wrapper .bx-pager{display: none;}
+#bannerdiv .bx-prev{position:relative; float: left; display: block; background:url(https://front-cdn.snaps.com/desktop/kor/images/icon/svg/left-6060-over.svg);
+                    background-repeat: no-repeat; background-size: 45px 45px;margin-top:0}
+#bannerdiv .bx-next{margin-left: 40px;position:relative; float:right; display: block; background:url(https://front-cdn.snaps.com/desktop/kor/images/icon/svg/right-6060-over.svg);
+                    background-repeat: no-repeat; background-size: 45px 45px; margin-top:0}
+
+#bannerdiv .bx-next::after{content:""; display: block; clear:both;}
+#bannerdiv .smart-banner-bx-wrapper .bx-controls-direction a{width: 45px; height: 45px;}
+
+/* 공통 listmain */
+.xans-product-listmain-3 .prdList .thumbnail:not(:nth-child(1)):hover:before{display: block}
+.xans-product-listmain-3 .prdList .thumbnail:not(:nth-child(1)):hover .overicon{display: block}
+
+.xans-product-listmain .prdList .thumbnail:hover:before{display: block}
+.xans-product-listmain .prdList .thumbnail:hover .overicon{display: block}
+
+.xans-product-listmain-2.ec-base-product .prdList .thumbnail .wish,
+.xans-product-listmain-3.ec-base-product .prdList .thumbnail .wish,
+.xans-product-listmain-4.ec-base-product .prdList .thumbnail .wish
+                  {position:relative; right: 0; bottom:0}
+
+.ec-base-product .prdList .thumbnail{margin:0}
+.ec-base-product .prdList{margin:3% 0 0; min-width:0; }
+
+/* 4번째 상품 파란색, 모든상품 오른쪽정렬 */
+.xans-product-4 .prdList{background-color:#0066e8; text-align: right}
+
+.ec-base-product.xans-product-3 .prdList,
+.ec-base-product.xans-product-2 .prdList{text-align: right;}
+
+.ec-base-product.xans-product-4  ul.grid4 > li{width: 300px; height:300px;}
+.xans-product-listmain.ec-base-product .prdList > li{margin: 30px 23px 30px 0;}
+.ec-base-product.xans-product-4 .prdList .description{display: none;}
+
+.ec-base-product.xans-product-2 .prdList,
+.ec-base-product.xans-product-3 .prdList{position:relative;min-height: 760px}
+
+.ec-base-product.xans-product-2 .prdList li:nth-child(1),
+.ec-base-product.xans-product-3 .prdList li:nth-child(1){position:absolute; right:0; top:0}
+.ec-base-product.xans-product-2 .prdList li:nth-child(2),
+.ec-base-product.xans-product-3 .prdList li:nth-child(2){position:absolute;right:325px; top:0}
+
+.ec-base-product.xans-product-2 .prdList li:nth-child(3),
+.ec-base-product.xans-product-3 .prdList li:nth-child(3){position:absolute;right:0; bottom:0}
+.ec-base-product.xans-product-2 .prdList li:nth-child(4),
+.ec-base-product.xans-product-3 .prdList li:nth-child(4){position:absolute;right:325px; bottom:0}
+
+
+.ec-base-product.xans-product .prdList .description .xans-product-listitem.spec > li{position:relative;line-height: 2}
+
+
+/* listmain-2 */
+/* hover 이미지 나오게 */
+.xans-product-listmain-2 .prdList >li:nth-child(1) .thumbnail:after{
+  content:"";background-image:url(/web/dimoo_img/2.jpg);
+display:none; width: 310px; height: 300px; overflow: hidden;
+position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain .prdList > li:nth-child(1) .thumbnail:hover:after{
+display: block
+}
+.xans-product-listmain-2 .prdList >li:nth-child(2) .thumbnail:after{
+  content:""; background-image: url(/web/dimoo_img/4.jpg);
+  display:none; width: 310px; height: 300px; overflow: hidden;
+  position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain .prdList > li:nth-child(2) .thumbnail:hover:after{display: block;
+}
+.xans-product-listmain-2 .prdList >li:nth-child(3) .thumbnail:after{
+  content:""; background-image:url(/web/dimoo_img/8.jpg);
+  display:none; width: 310px; height: 300px; overflow: hidden;
+  position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain .prdList > li:nth-child(3) .thumbnail:hover:after{display: block;
+}
+.xans-product-listmain-2 .prdList >li:nth-child(4) .thumbnail:after{
+  content:""; background-image: url(/web/dimoo_img/6.jpg);
+  display:none; width: 310px; height: 300px; overflow: hidden;
+  position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain-2 .prdList > li:nth-child(4) .thumbnail:hover:after{display: block;}
+
+/* 하버시 이미지 또롱  */
+/* .pedImgdimoo{display: none;}
+.xans-product-listmain-2 .prdList > li .pedImgdimoo:hover{
+position: absolute; left: 0; top:0; display: block; z-index:15000}
+.description ul > li:nth-child(4){height:0; padding:0; overflow:hidden} */
+
+
+/* 컨텐츠 가운데정렬 */
+.xans-product-1 ul.column3 li.item .box {
+    width:auto;}
+
+/* 추천상품 글씨 내림 */
+#wrap .title h2{margin-top: 10%; font-size: 30px; font-weight: bold; color:black}
+
+/* 기타 */
+#wrap .icon{border:none; }
+
+/* 좋아요 따봉 버튼 안 보이게  */
+.button{display:none;}
+
+/* listmain-3  */
+/* hover 이미지 나오게 */
+.xans-product-listmain-3 .prdList >li:nth-child(1) .thumbnail:after{
+  content:"";background-image:url(/web/dimoo_img/7.jpg);
+display:none; width: 300px; height: 300px; overflow: hidden;
+position:absolute; z-index:1000; left: 0; top: 0;}
+
+.xans-product-listmain .prdList > li:nth-child(1) .thumbnail:hover:after{
+display: block
+}
+.xans-product-listmain-3 .prdList >li:nth-child(3) .thumbnail:after{
+  content:""; background-image: url(/web/dimoo_img/5.jpg);
+  display:none; width: 300px; height: 300px; overflow: hidden;
+  position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain .prdList > li:nth-child(3) .thumbnail:hover:after{display: block;
+}
+.xans-product-listmain-3 .prdList >li:nth-child(2) .thumbnail:after{
+  content:""; background-image:url(/web/dimoo_img/3.jpg);
+  display:none; width: 300px; height: 300px; overflow: hidden;
+  position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain .prdList > li:nth-child(2) .thumbnail:hover:after{display: block;
+}
+.xans-product-listmain-3 .prdList >li:nth-child(4) .thumbnail:after{
+  content:""; background-image: url(/web/dimoo_img/1.jpg);
+  display:none; width: 300px; height: 300px; overflow: hidden;
+  position:absolute; z-index:1000; left: 0; top: 0;}
+.xans-product-listmain-3 .prdList > li:nth-child(4) .thumbnail:hover:after{display: block;}
+
+
+
+/* 상품이미지 300px; */
+.ec-base-product ul.grid4 > li{width:300px; height:300px;}
+
+/* 메인상품리스트 이미지와 상품정보 구분선 */
+.ec-base-product.xans-product-listmain .prdList .thumbnail .icon{
+  margin-left: -11px; margin-right: -11px;
+}
+/* 메인상품리스트 장바구니,찜하기버튼의 레이아웃*/
+.xans-product-listmain-3 .prdList .thumbnail:not(:nth-child(1)) .overicon{position:absolute;
+    display: none; text-align: center; transform: translateY(-50%);
+    top:50%; left: 0; bottom:0; right:0; z-index: 10001;}
+
+.xans-product-listmain .prdList .thumbnail .overicon{position:absolute;
+    display: none; text-align: center; transform: translateY(-50%);
+   left: 0; bottom:0; right:0; z-index: 1001;}
+
+.xans-product-listmain .prdList .thumbnail .overicon img{
+  background-color:white; border-radius: 10px; width: 35px; height: 35px }
+
+/* 좋아요랑 장바구니 버튼 사이의 간격 */
+.bey_wish{margin-left:5px}
+
+/* 상품이미지 사이즈 */
+.ec-base-product .prdList .thumbnail a img{width: 100%; height: 100%;
+box-sizing: border-box;}
+
+/* MDpick */
+/* 상품 왼쪽 글자 */
+#wrap .prdList_text{ color:black; text-align: left;
+                     font-size: 30px; position:absolute; left:5%; top:5%; line-height: 1.5;
+                     font-weight: 900;}
+
+/* 상품 왼쪽 글자 타이틀 */
+#wrap .prdList_text h2{font-size: 25px; text-align: left; font-weight: 500;}
+
+/* 상품 왼쪽 큐트 하트xeicon*/
+#wrap .prdList_text p span{font-size: 30px; color:#0066e8; margin-right: 5px;}
+/* 3번째 상품 왼쪽 글자 */
+#wrap .xans-product-3 .prdList_text p{margin-top: 6%;}
+
+
+/* 배너 바로 밑 신상품 추천 */
+#wrap .dimoo_title{position:absolute; left: 10%; top:2%; text-align: left;line-height: 1.5;}
+#wrap .dimoo_title span{font-size: 40px; color:white;}
+#wrap .dimoo_title a{font-size: 20px; display: inline-block;
+                      border:1px solid #fff; border-radius: 20px;
+                      color:white;padding:10px 25px; margin-top:15px}
+#wrap .dimoo_title p{font-size:16px; color:white;}
+
+#wrap .ec-base-product .prdList{margin:5% 0 0;}
+
+#wrap .prdList_text1{ color:black; text-align: left;
+             font-size: 15px; position:absolute; left:5%; top:15%;
+              line-height: 1.5}
+#wrap .prdList_text1 .title{position:relative; min-height: 700px}
+#wrap .prdList_text .title{position:relative; min-height: 700px}
+
+/* 패키지,기획전 배너~ */
+.P_png{position:absolute; left:0; bottom:20px; line-height: 0; font-size: 0;}
+.P_png1{position:absolute; left:0; bottom:20px; line-height: 0; font-size: 0;}
+
+/* 유니버시티 가상선택자  */
+#contents .xans-product-4 .prdList .thumbnail::before{content:"";
+                background-image:url(https://c.011st.com/img/main/sprites/sp_main_2x.png);
+                position:absolute; left: 0; top:0; width:50px;
+                height:50px; z-index:2000; background-position:-77px -94px;
+                background-size: 209px 184px; transform:rotate(90deg);}
+/* 유니버시티 가상선택자 new글씨 */
+#contents .xans-product-4 .prdList .thumbnail p{ color: white;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    z-index: 2000;
+    font-size: 15px;
+    font-weight: bolder;}
+
+#insta .chatis_is_insta_wrap.mCustomScrollbar._mCS_1.mCS_no_scrollbar {height: auto !important;}
+
+/* 아이디는 되도록 건들이지 않고 제이쿼리에서 클래스만 넣었다 뺏다하기 */
+/* 선택자로써는 아이디, 옷을입히고 벗기는건 클래스!*/
+
+.overflowYH{overflow-y:hidden !important; position:relative;}
+
+#workintroduce {position:fixed; left:0; right: 0; top:0; bottom:0;
+                background-color:rgba(0,0,0,.5); z-index: 50000;
+                font-family: "TmoneyRoundWindRegular"}
+
+/* 스크롤 안 보이게끔 */
+/* 애기가 엄마보다 작은 경우
+top:50%; transform:translateY(-50%)*/
+/* 애기가 엄마보다 큰 경우:
+1번 top:0; height:calc(100%-30px);overflow-y:auto
+2번 top:0; min-height:calc(100%-30px); max-height:calc(100%-30px)*/
+
+.workIn_con_W{position:absolute; max-width:700px; max-height:443px;
+             width:calc(100%-30px);
+             margin:auto; left: 0; right: 0; bottom:0;
+             top:50%; transform:translateY(-50%);
+             background-color: white}
+/* .workIn_con_W::before{ content: ""; position:relative; z-index: 10000;
+                        background-image: url(/web/bey.png);
+                        background-size: 100%; background-repeat: no-repeat;} */
+.workIn_con_W button{position:absolute; right:0; top:0;
+               background: none; font-size: 50px;
+               color:white;}
+
+.rel{position:relative; bottom:50px; height: 450px;}
+
+.myimg{position:absolute; left: 0; top:0;}
+.myimg img{width: 450px;}
+
+.ncsdiv{font-size: 15px; position:absolute; right: 25px; top:90px;}
+.ncsdiv a{ display: block; margin-top:25px; text-align: center;
+           font-size:20px; font-weight: 700;}
+
+.ncsdiva{position:absolute; right: 25px; bottom:0; text-align: center;
+          width: 250px; font-size: 0; line-height: 0;}
+.ncsdiva > li{display: inline-block; margin: 10px;}
+.ncsdiva > li a img{width:80px;}

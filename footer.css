@@ -1,0 +1,55 @@
+
+/* 하단 css  */
+/* 하단 선 없애주기 */
+#footer {border-bottom: none; background-color: #f6f7fb}
+#footer::before{display: none;}
+
+/* 하단 너비를 1280px주고 센터로 옮김 */
+#footer .xans-layout-footer{width: 1280px; float: none; text-align: center;}
+
+/* 타이틀 아래로 좀 내려줌 */
+#footer .xans-layout-footer .title{margin-top:25px;}
+
+#footer .xans-layout-footer .copyright{display: none;}
+
+#footer .xans-layout-footer .address{color:black; font-size: 13px;}
+#footer .xans-layout-footer .address span{padding: 0 10px 0 0 }
+
+#footer .xans-layout-footer .utilMenu{float: none; display: block !important; font-size: 15px;
+                                      line-height: 25px; color:#777}
+#footer .xans-layout-footer .utilMenu li{float: none; display: inline-block; background: #eee; margin:0 5px;
+                                        }
+#footer .xans-layout-footer .utilMenu li a {color:#777;}
+#footer .xans-layout-footer .utilMenu li a strong{font-weight: normal;}
+
+
+
+
+/* 유튜브 영상 */
+.iframevideo {position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 100%;}
+
+.iframevideo iframe{position: absolute;
+top:50%; transform:translateY(-50%);
+left: 0;
+width: 70%;
+height: 70%;}
+
+.iframe_text{position:absolute; right: 0;
+            top:50%; transform: translateY(-50%);text-align: right;}
+.iframe_text strong,
+.iframe_text p,
+.iframe_text a{display: block; margin-bottom:15px; line-height: 1.2em; color:black}
+.iframe_text strong {font-size:30px;}
+.iframe_text p{font-size:18px;}
+.iframe_text a{display: inline-block; font-size:20px; padding:10px 25px; border:1px solid black;
+                transition:.5s; border-radius: 10px}
+.iframe_text a:hover{background-color: #0066e8}
+
+.xans-smart-banner-admin-PC00001.xans-smart-banner-admin{margin-top:10%}
+
+#backblue{background-color:#f6f7fb; margin-top:5%}
+#backblue .inner{width:1200px; margin:0 auto; }
